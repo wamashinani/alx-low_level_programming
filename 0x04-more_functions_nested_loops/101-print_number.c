@@ -21,3 +21,4 @@ void print_number(int n)
 	}
 	putchar(num % 10 + '0');
 }
+
