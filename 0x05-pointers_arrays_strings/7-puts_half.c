@@ -1,16 +1,13 @@
 #include "main.h"
 
-
 /**
  * puts_half - Print half a str
  * @str: a printer
  */
 
-
 void puts_half(char *str)
- {
-
- 	 int index = 0, len = 0, n;
+{
+	int index = 0, len = 0, n;
 
 	while (str[index++])
 		len++;
@@ -24,5 +21,5 @@ void puts_half(char *str)
 		_putchar(str[index]);
 
 	_putchar('\n');
- }
+}
 
