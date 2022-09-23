@@ -1,38 +1,35 @@
-#include "main.h"                                                                                                                     
-                                                                                                                                      
-/**                                                                                                                                   
- * cap_string - Capitalizes all words of a string.                                                                                    
- * @str: The string to be capitalized.                                                                                                
- *                                                                                                                                    
- * Return: A pointer to the changed string.                                                                                           
- */                                                                                                                                   
-char *cap_string(char *str)                                                                                                           
-{                                                                                                                                     
-        int index = 0;                                                                                                                
-                                                                                                                                      
-        while (str[index])                                                                                                            
-        {                                                                                                                             
-                while (!(str[index] >= 'a' && str[index] <= 'z'))                                                                     
-                        index++;                                                                                                      
-                                                                                                                                      
-                if (str[index - 1] == ' ' ||                                                                                          
-                    str[index - 1] == '\t' ||                                                                                         
-                    str[index - 1] == '\n' ||                                                                                         
-                    str[index - 1] == ',' ||                                                                                          
-                    str[index - 1] == ';' ||                                                                                          
-                    str[index - 1] == '.' ||                                                                                          
-                    str[index - 1] == '!' ||                                                                                          
-                    str[index - 1] == '?' ||                                                                                          
-                    str[index - 1] == '"' ||                                                                                          
-                    str[index - 1] == '(' ||                                                                                          
-                    str[index - 1] == ')' ||                                                                                          
-                    str[index - 1] == '{' ||                                                                                          
-                    str[index - 1] == '}' ||                                                                                          
-                    index == 0)                                                                                                       
-                        str[index] -= 32;                                                                                             
-                                                                                                                                      
-                index++;                                                                                                              
-        }                                                                                                                             
-                                                                                                                                      
-        return (str);                                                                                                                 
+#include "main.h"
+
+/**
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
+ */
+void print_number(int n)
+{
+	unsigned int m, d, count;
+
+	if (n < 0)
+	{
+		_putchar(45);
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
+	}
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }
