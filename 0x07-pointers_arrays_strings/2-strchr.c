@@ -1,4 +1,4 @@
-/**                                                                                                                                   
+/*                                                                                                                                   
  * File: 2-strchr.c                                                                                                                  
  * Auth: wamashinani                                                                                                                 
  */                                                                                                                                  
@@ -25,3 +25,4 @@ char *_strchr(char *s, char c)
                                                                                                                                      
         return ('\0');                                                                                                               
 }
+
