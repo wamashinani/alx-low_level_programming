@@ -1,4 +1,4 @@
-/*                                                                                                                                 
+/**                                                                                                                                 
  * File: 8-print_diagsums.c                                                                                                        
  * Auth: wamashinani                                                                                                                  
  */                                                                                                                                
@@ -32,4 +32,3 @@ void print_diagsums(int *a, int size)
                                                                                                                                    
         printf("%d, %d\n", sum1, sum2);                                                                                            
 }
-

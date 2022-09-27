@@ -1,4 +1,4 @@
-/*                                                                                                                                 
+/**                                                                                                                                 
  * File: 7-print_chessboard.c                                                                                                      
  * Auth: wamashinani                                                                                                 
  */                                                                                                                                
@@ -21,4 +21,3 @@ void print_chessboard(char (*a)[8])
                 _putchar('\n');                                                                                                    
         }                                                                                                                          
 }
-
