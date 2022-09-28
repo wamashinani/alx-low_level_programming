@@ -1,18 +1,22 @@
-#include "main.h"
-
-/** _put_recursion - prints's a string followed bty new line
- *
- * Return: void
- * */
-void _print_rev_recursion(char *s);
-{
-         if (*s != '\0')
-	 {
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
-	 }	
-
-          else
-		  _putchar('\n')
-
+/*                                                                                                                                      
+ * File: 0-puts_recursion.c                                                                                                             
+ * Auth: sam                                                                                                                            
+ */                                                                                                                                     
+                                                                                                                                        
+#include "main.h"                                                                                                                       
+                                                                                                                                        
+/**                                                                                                                                     
+ * _puts_recursion - Prints a string, followed by a new line.                                                                           
+ * @s: The string to be printed.                                                                                                        
+ */                                                                                                                                     
+void _puts_recursion(char *s)                                                                                                           
+{                                                                                                                                       
+        if (*s)                                                                                                                         
+        {                                                                                                                               
+                _putchar(*s);                                                                                                           
+                _puts_recursion(s + 1);                                                                                                 
+        }                                                                                                                               
+                                                                                                                                        
+        else                                                                                                                            
+                _putchar('\n');                                                                                                         
 }
