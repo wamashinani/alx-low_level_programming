@@ -2,32 +2,14 @@
  * File: 100-set_string.c                                                                                                        
  * Auth: wamashinani                                                                                                                  
  */                                                                                                                                
-                                                                                                                                   
-#include "main.h"                                                                                                                  
-#include <stdio.h>                                                                                                                 
-                                                                                                                                   
-/**                                                                                                                                
- * print_diagsums - Prints the sum of the two diagonals                                                                            
- *                  of a square matrix of integers.                                                                                
- * @a: The matrix of integers.                                                                                                     
- * @size: The size of the matrix.                                                                                                  
+#include "main.h"
+
+/**
+ * set_string - sets the value of a pointer to a char
+ * @s: pointer to pointer we need to set to
+ * @to: string to set
  */
-void print_diagsums(int *a, int size)                                                                                              
-{                                                                                                                                  
-        int index, sum1 = 0, sum2 = 0;                                                                                             
-                                                                                                                                   
-        for (index = 0; index < size; index++)                                                                                     
-        {                                                                                                                          
-                sum1 += a[index];                                                                                                  
-                a += size;                                                                                                         
-        }                             
-                a -= size;                                                                                                                 
-                                                                                                                                   
-        for (index = 0; index < size; index++)                                                                                     
-        {                                                                                                                          
-                sum2 += a[index];                                                                                                  
-                a -= size;                                                                                                         
-        }                                                                                                                          
-                                                                                                                                   
-        printf("%d, %d\n", sum1, sum2);                                                                                            
+void set_string(char **s, char *to)
+{
+	*s = to;
 }
