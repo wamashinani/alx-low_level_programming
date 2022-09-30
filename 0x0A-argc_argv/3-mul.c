@@ -1,23 +1,23 @@
-#include <stdio.h>                                                                                                                   
 #include "main.h"                                                                                                                    
+#include <stdlib.h>                                                                                                                  
+#include <stdio.h>                                                                                                                   
                                                                                                                                      
 /**                                                                                                                                  
- * main - Print the name of the program                                                                                              
- * @argc: Count arguments                                                                                                            
- * @argv: Arguments                                                                                                                  
- *                                                                                                                                   
- * Return: Always 0 (Success)                                                                                                        
+ * main - prints the multiplication of two integers                                                                                  
+ * @argc: argument count                                                                                                             
+ * @argv: argument vector                                                                                                            
+ * Return: 0 if true, 1 if false                                                                                                     
  */                                                                                                                                  
-                                                                                                                                     
 int main(int argc, char *argv[])                                                                                                     
 {                                                                                                                                    
-                                                                                                                                     
-/*Declaring variables*/                                                                                                              
-int count = 0;                                                                                                                       
-                                                                                                                                     
-        if (argc > 0)                                                                                                                        
-        {                                                                                                                                    
-            /*WHILE - Print each arguments*/                                                                                                     
-             while (count < argc)                                                                                                                 
-        {                                                                                                                                    
-printf("%s\n", argv[count]);
+int a, b;                                                                                                                            
+if (argc == 3)                                                                                                                       
+{                                                                                                                                    
+a = atoi(argv[1]);                                                                                                                   
+b = atoi(argv[2]);                                                                                                                   
+printf("%d\n", a *b);                                                                                                                
+return (0);                                                                                                                          
+}                                                                                                                                    
+printf("Error\n");                                                                                                                   
+return (1);                                                                                                                          
+}
