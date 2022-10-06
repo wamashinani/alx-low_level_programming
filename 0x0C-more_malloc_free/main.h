@@ -1,19 +1,15 @@
-#include "main.h"
-#include <stdlib.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
- *
- * Return: A pointer to the allocated memory.
- */
-void *malloc_checked(unsigned int b)
-{
-	void *mem = malloc(b);
+void _puts(char *str);
+void *malloc_checked(unsigned int b);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+int _putchar(char c);
+int _atoi(const char *s);
+void print_int(unsigned lond int n);
 
-	if (mem == NULL)
-		exit(98);
 
-	return (mem);
-}
-
+#endif
