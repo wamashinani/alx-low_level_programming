@@ -1,20 +1,6 @@
-#include "dog.h"
+#ifndef _0_OBJECT_LIKE_MACRO_H_
+#define _0_OBJECT_LIKE_MACRO_H_
 
-/**
- * init_dog - initializes a structure of type dog
- * @d: pointer to structure
- * @name: pointer to the name of the dog
- * @age: age of dog
- * @owner: pointer to owner of dog
- *
- * Return: void
- */
-void init_dog(struct dog *d, char *name, float age, char *owner)
-{
-	if (d)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
-}
+#define SIZE 1024
+
+#endif /* _0_OBJECT_LIKE_MACRO_H_ */
